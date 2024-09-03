@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class LogopassModel {
-    public String name;
+    public String userName;
     public String password;
 }

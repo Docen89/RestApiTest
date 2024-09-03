@@ -2,8 +2,6 @@ package test;
 
 
 import static io.restassured.RestAssured.get;
-import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.patch;
 
 import config.config;
 import io.restassured.RestAssured;
@@ -12,7 +10,6 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.response.Response;
 import java.util.List;
-import java.util.Map;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
