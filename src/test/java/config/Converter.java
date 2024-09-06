@@ -11,12 +11,14 @@ import org.junit.jupiter.api.Test;
 
 
 public class Converter {
+
   Faker faker = new Faker(new Locale("EN"));
-  String firstName=faker.name().firstName();
-  String password=faker.internet().password();
+  String firstName = faker.name().firstName();
+  String password = faker.internet().password();
 
   ObjectMapper objectMapper = new ObjectMapper();
-@Test
+
+  @Test
   void pojoToJsonString() throws IOException {
     objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
     LogopassModel logpass = new LogopassModel(firstName, password);
